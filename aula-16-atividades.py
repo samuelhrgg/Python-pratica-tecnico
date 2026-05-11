@@ -8,6 +8,7 @@ D#. Faça um programa que receba e divida 2 números. A saída da divisão preci
 E. Faça um programa que receba um número inteiro e mostre o sucessor e antecessor.
 
 Observação
+Faça um arquivo '.py' para cada atividade. 
 É obrigatório a saída formatada!
 Variáveis bem definidas
 O código precisa ter o cabeçalho padrão
