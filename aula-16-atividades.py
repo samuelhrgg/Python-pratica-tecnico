@@ -11,7 +11,7 @@ Observação
 Faça um arquivo '.py' para cada atividade. 
 É obrigatório a saída formatada!
 Variáveis bem definidas
-O código precisa ter o cabeçalho padrão
+O código precisa ter o cabeçalho padrão → Enunciado, nome e data. 
 o código precisa ser comentado
 Enviar somente os exercícios que possuem '#'
 
