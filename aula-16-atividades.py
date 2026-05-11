@@ -17,6 +17,3 @@ Enviar somente os exercícios que possuem '#'
 
 """
 
-#import datetime
-#ano_atual = datime.datetime.now().year
-#idade = int(ano_atual)-nascimento
