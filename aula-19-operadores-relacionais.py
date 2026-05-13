@@ -27,3 +27,4 @@ print(igual)
 
 diferente = 'a' != 'b'
 print(diferente)
+#
