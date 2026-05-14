@@ -1,0 +1,9 @@
+#Exemplo in:
+
+nome = 'Antônio Aguiar'
+
+if ' ' in nome:
+    print(f'O nome {nome} tem espaços.')
+
+else:
+    print(f'O nome {nome} não tem espaços.')

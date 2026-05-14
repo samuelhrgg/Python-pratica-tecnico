@@ -5,7 +5,7 @@ condicao2 = False
 condicao3 = False
 condicao4 = True
 print()
-if condicao1:
+if condicao:
     print('Código para Condição 1')
 
 elif condicao2:
