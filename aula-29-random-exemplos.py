@@ -2,6 +2,7 @@
 
 import os
 import random
+import time
 
 os.system('cls')
 
@@ -55,3 +56,7 @@ print(linha)
 #Randrange
 intervalo = random.randrange(0,20,2)
 print(f'O número escolhido foi: {intervalo}')
+
+print('Aguarde 5 segundos')
+time.sleep(5)
+print('Agora mostra isso!')
