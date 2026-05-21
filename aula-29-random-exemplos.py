@@ -60,3 +60,6 @@ print(f'O número escolhido foi: {intervalo}')
 print('Aguarde 5 segundos')
 time.sleep(5)
 print('Agora mostra isso!')
+
+print(round(5.4))
+
