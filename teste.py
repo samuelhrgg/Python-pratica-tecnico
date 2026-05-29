@@ -9,54 +9,72 @@ Usuário decide quando parar
 Utilize boas práticas para realizar validações e garantir
 o bom funcionamento do programa.
 """
+
 import os
+import operator
 os.system('cls')
+
 
 continuar = True
 
 while continuar:
-    valor1 = input('Informe o primeiro valor:')
-    valor2 = input('Informe o segundo valor:')
-    #tratar a entrada 
+    valor1 = input('Informe o primeiro valor: ')
+    valor2 = input('Informe o segundo valor: ')
+    
     try:
         valorVerificado1 = float(valor1)
         valorVerificado2 = float(valor2)
         numerosValidos = True
     except:
         numerosValidos = None
-
+    
     if numerosValidos is None:
-        print('Um ou ambos valores são inválidos')
+        print('Um ou ambos números são inválidos')
         continue
 
-    operador = input('Informe o Operador [+] [-] [*] [/]')
+    operador = input('Informe o operador [+] [-] [*] [/]: ')
     operadoresPermitidos = '+-*/'
 
     if operador in operadoresPermitidos:
-        
+
         if operador == '+':
             resultado = valorVerificado1 + valorVerificado2
+
         elif operador == '-':
             resultado = valorVerificado1 - valorVerificado2
+        
         elif operador == '*':
             resultado = valorVerificado1 * valorVerificado2
+        
         elif operador == '/':
-            #verificar se nao está dividindo por 0:
-            if (valorVerificado1 == 0) or (valorVerificado2 == 0):
-                resultado = 'Não é possível dividir por 0'
+            if (valorVerificado1 == 0) or (valorVerificado2 ==0):
+                resultado= 'Operação inválida'
+                
             else:
                 resultado = valorVerificado1 / valorVerificado2
+
         else:
-            resultado = 'Operação inválida!'
+            resultado = 'Operação Inválida!'
+
+        #biblioteca operator
+        # operacoes = {
+        # '+': operator.add,
+        # '-': operator.sub,
+        # '*': operator.mul,
+        # '/': operator.truediv
+        # }
+
+        # resultado = operacoes[operador](valorVerificado1, valorVerificado2)
+        
     else:
-        resultado = 'Operação inválida!'
-    
-    print(f'Resultado da Operação é: {resultado}')
+        resultado = 'Operação Inválida!'
+        
+    print(f'O resultado da operação é : {resultado}')
 
     while continuar:
-        opcao = input('Desejar continuar: [S]im ou [N]ão: ')
+        opcao = input('\nDesejar continuar: [S]im ou [N]ão: ')
         if opcao.lower() == 's':
-            break   
+            break
         elif opcao.lower() == 'n':
             continuar = False
         else:
@@ -64,9 +82,4 @@ while continuar:
     
     os.system('cls')
 
-print('Programa Encerrado :)')
-
-
-
-    
-
+print('Programa Encerrado!')
