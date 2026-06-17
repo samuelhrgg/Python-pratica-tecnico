@@ -43,3 +43,22 @@ for sala in salas: #para cada sala na lista 'salas'
         print(aluno)
 
 #Criar uma matriz com for aninhado
+os.system('cls')
+matriz = []
+
+for x in range(3):
+    print(f'Digite os valores da linha {x+1}: ')
+    linha = []
+    for y in range(3):
+        valor = input('Informe um valor: ')
+        linha.append(valor)
+
+    matriz.append(linha)
+
+print(matriz)
+
+#Imprimindo linha a linha
+for x in matriz:
+    for valor in x:
+        print(valor, end = ' ')
+    print()
