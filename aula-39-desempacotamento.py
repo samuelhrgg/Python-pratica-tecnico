@@ -9,3 +9,25 @@ separadas. Por exemplo, se você tiver uma tupla ccom três elementos
 pode desempacotá-la em três diferentes variáveis. 
 
 """
+string = 'ABCD'
+lista = ['Pedro','Tiago','João','Barquinho']
+tupla = ('Python','Java','C++')
+
+a,b,c,d = string
+print(a,b,c,d)
+
+x,*resto,y = lista
+print(x,y)
+print(resto)
+
+print(*resto)
+
+
+#processamento de csv
+linha = ['Samuel','27','Professor','Muriaé','MG']
+
+nome,idade,*dados = linha
+print()
+print(f'Nome: {nome}')
+print(f'Idade: {idade}')
+print(f'Restante dos dados: {dados}')
