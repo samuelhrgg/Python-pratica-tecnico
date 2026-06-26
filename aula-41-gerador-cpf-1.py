@@ -25,3 +25,55 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
+cpf = input('Informe os 9 dígitos do CPF: ')
+cpfLista = []
+contagem = 10
+soma = 0
+
+for x in range(len(cpf)):
+    cpfLista.append(cpf[x])
+
+for y in cpfLista:
+    multi = int(y)*contagem
+    soma += multi
+    contagem -= 1
+
+resultado = soma * 10
+resto = resultado % 11
+
+if resto > 9:
+    digito = 0
+
+else:
+    digito = resto
+
+print(f'Primeiro dígito do CPF: {digito}')
+
+novoCPF = cpfLista.copy()
+novoCPF.append(digito)
+
+contagem = 11
+soma = 0
+
+for y in novoCPF:
+    multi = int(y) * contagem
+    soma += multi
+    contagem -= 1
+
+resultado = soma * 10
+resto = resultado % 11
+
+if resto > 9:
+    digito2 = 0
+else:
+    digito2 = resto
+
+novoCPF.append(digito2)
+
+print(f'Segundo digito do CPF: {digito2}')
+print('CPF COMPLETO:')
+
+for x in novoCPF:
+    print(x , end = '')
+
+
