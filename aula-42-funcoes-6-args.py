@@ -33,3 +33,4 @@ print(maisUmaSoma)
 numeros = 1,2,3,4,5,6
 soma2 = somar(*numeros)
 print(soma2)
+
