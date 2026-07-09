@@ -19,3 +19,40 @@ while True:
     print('3 - Mostrar valores do dicionário')
     print('4 - Mostrar itens do dicionário')
     print('5 - Sair')
+
+    opcao = input('Escolha uma opção (1-5): ')
+    if opcao == '1':
+        #Adicionar uma par chave-valor ao dicionário:
+        chave = input('Digite a chave: ')
+        valor = input('Digite um valor: ')
+        meuDicionario[chave] = valor
+        print(f'Par {chave} : {valor} adicionado!')
+    
+    elif opcao == '2':
+        #Mostrar as chaves do dicionário usando keys()
+        if meuDicionario: #Se não estiver vazio, ou seja, não for falso
+            print(f'A chave do dicionário: {meuDicionario.keys()}')
+        else:
+            print('O dicionário está vazio. Adicione itens primeiro')
+    elif opcao == '3':
+        #Mostrar os valores do dicionário usando values()
+        if meuDicionario:
+            print(f'Valores do dicionario: {meuDicionario.values()}')
+        else:
+            print('O dicionário está vazio. Adicione itens primeiro')
+    
+    elif opcao == '4':
+        #Mostrar os itens (chave-valor) do dicionaro usando items()
+        if meuDicionario:
+            print(f'Itens do dicionário: {meuDicionario.items()}')
+        else:
+            print('O dicionário está vazio. Adicione itens primeiro')    
+    
+    elif opcao == 5:
+        #sair do programa
+        print('Saindo do programa...')
+        break
+
+    else:
+        print('Opção inválida')
+    
