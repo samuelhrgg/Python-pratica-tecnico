@@ -48,7 +48,7 @@ while True:
         else:
             print('O dicionário está vazio. Adicione itens primeiro')    
     
-    elif opcao == 5:
+    elif opcao == '5':
         #sair do programa
         print('Saindo do programa...')
         break
@@ -56,3 +56,24 @@ while True:
     else:
         print('Opção inválida')
     
+
+#Outro exemplo utilizando FOR
+#items() retorna pares(chave, valor)
+#Dicionário
+aluno = {
+    'Nome':'Samuel',
+    'Idade' : 27,
+    'Curso' : 'Python'
+}
+print('-'*70)
+
+for x in aluno.items():
+    print(x)
+print('-'*70)
+
+print(aluno)
+
+print('-'*70)
+
+for x in aluno.keys():
+    print(x)
