@@ -25,3 +25,22 @@ que estão em um dos sets, mas não em ambos.
 9 - issubset(set2): Verifica se o set é um subconjunto de outro set.
 
 """
+
+# ============ GRUPOS ============
+
+# 2,6 Remove e intersection
+# Francisco 
+# Arthur
+
+# 5,8,1 Add, union e symmetric_diferrence
+# João 
+# Eduardo
+# Jesiel
+
+# 3,7 - discard e difference
+# Davi  
+# Julio
+
+# 4,9 - clear, issubset
+# Frank 
+# Fabio
