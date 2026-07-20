@@ -40,6 +40,8 @@ print(s3)
 s4 = {2,3,4,5,5,5,6,2,0,True,False}
 print(s4)
 
+
+
 """
 Estruturas de dados: Aplicações com SET { }
 
