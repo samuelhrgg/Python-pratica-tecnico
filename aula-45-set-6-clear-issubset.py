@@ -37,8 +37,6 @@ set1.issubset(set2)
 """
 
 #Criação do "SET"
-
-
 planetas = {'Terra', 'Vênus', 'Mercurio', 'Marte'}
 
 #Usando a função clear()
