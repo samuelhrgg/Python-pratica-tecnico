@@ -6,7 +6,11 @@ from modulos_py import arquivo
 from modulos_py.arquivo import *
 from modulos_py.arquivo import xico
 
+
 print(arquivo.variavel)
 print(variavel)
 print(xico)
 print(fabio)
+
+
+
